@@ -1,8 +1,6 @@
 [![DOI](https://zenodo.org/badge/725762461.svg)](https://zenodo.org/doi/10.5281/zenodo.10234037)
 
-This repository contains code to replicate the preprint Okamoto *et al.* 2023.
-"Y and Mitochondrial Chromosomes in the Heterogeneous Stock Rat Population",
-doi:[10.1101/2023.11.29.566473](https://doi.org/10.1101/2023.11.29.566473)
+This repository contains code to replicate the preprint Okamoto F, Chitre AS, Sanches TM, Chen D, Munro D, NIDA Center for GWAS in Outbred Rats, Polesskaya O, Palmer AA 2023. Y and Mitochondrial Chromosomes in the Heterogeneous Stock Rat Population. *bioRxiv*. doi:[10.1101/2023.11.29.566473](https://doi.org/10.1101/2023.11.29.566473)
 
 # Reproducing this paper's analysis #
 
