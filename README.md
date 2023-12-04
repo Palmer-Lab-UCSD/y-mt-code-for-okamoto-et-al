@@ -67,7 +67,6 @@ found in the `gene_expression.tar` tarball.
 include (stored in `gwas_phenotypes.tar.gz`):
 - `gwas_phenotypes_table.csv` (RFIDs x phenotypes, trait names anonymized)
 - `trait_dictionary.csv` (ties trait names to their original projects)
-- `project_metadata.csv` (ties project name to metadata)
 - `kidneys.csv` (kidney count at birth for all rats tested)
 
 Directly within `data/` is `sample_info.csv` (basic information about each
