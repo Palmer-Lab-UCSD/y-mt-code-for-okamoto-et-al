@@ -2,6 +2,8 @@
 
 This repository contains code to replicate the preprint Okamoto F, Chitre AS, Sanches TM, Chen D, Munro D, NIDA Center for GWAS in Outbred Rats, Polesskaya O, Palmer AA 2023. Y and Mitochondrial Chromosomes in the Heterogeneous Stock Rat Population. *bioRxiv*. doi:[10.1101/2023.11.29.566473](https://doi.org/10.1101/2023.11.29.566473)
 
+Input data files for this code ("Data") may be found in UCSD Library: Okamoto, Faith; Chitre, Apurva S.; Sanches, Thiago M.; Chen, Denghui; Munro, Daniel; Polesskaya, Oksana (2023). Data from: Y and MT Chromosomes in the HS Rat Population. In The Center for GWAS in Outbred Rats Database (C-GORD). UC San Diego Library Digital Collections. https://doi.org/10.6075/J0M61KFB
+
 # Reproducing this paper's analysis #
 
 - Y and MT haplotyping: all Python notebooks
@@ -43,34 +45,35 @@ The code expects this directory structure within your working directory:
     * plots
     * trees
 
-`code/` starts populated with the code included herein.
+`code/` begins populated with the code included herein.
 
-`data/expression/` starts populated with `log2` BED files for each tissue,
+`data/expression/` begins populated with `log2` BED files for each tissue,
 i.e. `<name>.rn7.expr.log2.bed.gz`, where `<name>` is a tissue's short name.
 There are also `tpm` and `iqn` files for only "Brain" data. These files may be
-found in the `gene_expression.tar` tarball.
+found in "Gene expression phenotypes" in Data.
 
-`data/genotypes/` starts populated with all input genotypes. These include:
-- VCFs (documented in `genotype_helpers.py`, stored in `y_mt_genotypes.tar.gz`)
+`data/genotypes/` begins populated with all input genotypes. These include:
+- VCFs (documented in `genotype_helpers.py`, found in "Raw genotypes" in Data)
     * `HS_founders.vcf.gz`
     * `modern_HS_deep_sequenced.vcf.gz`
     * `modern_HS_shallow_sequenced.vcf.gz`
     * `STRs.vcf.gz`
-- GRM files (stored in `autosomal_grm.tar.gz`)
+- GRM files (stored in "Genetic relationship matrix" in Data)
     * `autosomes.grm.bin` 
     * `autosomes.grm.id`
     * `autosomes.grm.N.bin`
-- `mRatBN_7_2_mt.fasta`: reference MT (also from `y_mt_genotypes.tar.gz`)
-- `mt_depth.csv` (read depth along MT for each low-coverage sample)
+- `mRatBN_7_2_mt.fasta`: reference MT (also from "Raw genotypes" in Data)
+- `mt_depth.csv` ("Sequencing depth along MT" in Data)
 
-`data/phenotypes/` starts populated with consolidated phenotype files. These
-include (stored in `gwas_phenotypes.tar.gz`):
+`data/phenotypes/` begins populated with consolidated phenotype files. These
+include (stored in "GWAS expression phenotypes" in Data):
 - `gwas_phenotypes_table.csv` (RFIDs x phenotypes, trait names anonymized)
 - `trait_dictionary.csv` (ties trait names to their original projects)
 - `kidneys.csv` (kidney count at birth for all rats tested)
 
 Directly within `data/` is `sample_info.csv` (basic information about each
-modern HS rat: RFID, sex, sequencing method, and, if known, birth date)
+modern HS rat: RFID, sex, sequencing method, and, if known, birth date;
+stored in "Sample metadata" in Data)
 
 All scripts write to `results/` subdirectories, with one exception:
 `prep_gcta_files.R` populates `data/phenotypes/`
@@ -92,7 +95,7 @@ The given filenames are relative to/within `results/`.
 | `associations/gwas_phenotype_Y_tests.csv` | Results of Y haplotype to ex-GWAS phenotype associations, sorted by p-value | CSV file with `name` [of phenotype], `Freq`, `p` [both output by GCTA], and `adj_p` [from BH] columns |
 | `associations/gwas_phenotype_MT_tests.csv` | Results of MT haplotype to ex-GWAS phenotype associations, sorted by p-value | CSV file with `name` [of phenotype], `Freq`, `p` [both output by GCTA], and `adj_p` [from BH] columns |
 
-Notably, the latter four files are stored in `association_results.tar.gz`.
+Notably, the latter four files are stored in "Association test results" in Data.
 
 # Sources of tables/figures #
 
