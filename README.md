@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10234038.svg)](https://doi.org/10.5281/zenodo.10234038)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11493119.svg)](https://doi.org/10.5281/zenodo.11493119)
 
 This repository contains code to reproduce the paper "Y and Mitochondrial
 Chromosomes in the Heterogeneous Stock Rat Population".
