@@ -7,9 +7,10 @@ A prior version of this paper, the preprint Okamoto *et al.* 2023, is in bioRxiv
 doi:[10.1101/2023.11.29.566473](https://doi.org/10.1101/2023.11.29.566473)
 
 Input data files ("Data") for this code are in UCSD Library Digital Collections:
-Okamoto *et al.* Data from: Y and MT Chromosomes in the HS Rat Population. In
-The Center for GWAS in Outbred Rats Database (C-GORD). UC San Diego Library
-Digital Collections.
+Okamoto, Faith; Chitre, Apurva S.; NIDA Center for GWAS in Outbred Rats; Palmer,
+Abraham A. (2024). Data from: Y and MT Chromosomes in the Heterogeneous Stock
+Rat Population. In The Center for GWAS in Outbred Rats Database (C-GORD). UC San
+Diego Library Digital Collections. https://doi.org/10.6075/J0VX0GQQ
 
 Software requirements are in `requirements.csv`.
 
