@@ -107,7 +107,7 @@ These files are from "Gene expression" in Data.
     * GRM files (from "Genetic relationship matrix" in Data): 
     `autosomes.grm.bin`, `autosomes.grm.id`, `autosomes.grm.N.bin`
 
-`data/phenotypes/` has phenotypes, including (from "GWAS phenotypes" in Data):
+- `data/phenotypes/` has phenotypes, including (from "GWAS phenotypes" in Data):
     * `GWAS_phenotype_table.csv` (RFIDs x phenotypes, trait names anonymized)
     * `trait_dictionary.csv` (ties trait names to their original projects)
     * `kidneys.csv` (kidney count at birth for all rats tested)
