@@ -212,4 +212,4 @@ unfortunately, terrible. Since they can't be changed, here's a reference table:
 | Sequencing depths | https://library.ucsd.edu/dc/object/bb6258219k/_7_1.zip/download |
 | Association test results | https://library.ucsd.edu/dc/object/bb6258219k/_8_1.zip/download |
 
-This table also appears in the paper as Table S2.
+This table also appears in the paper as File S2.
