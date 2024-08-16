@@ -1,5 +1,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11493119.svg)](https://doi.org/10.5281/zenodo.11493119)
 
+# Y and MT Chromosomes in the Heterogeneous Stock Rat Population
+
 This repository contains code to reproduce the paper "Y and Mitochondrial
 Chromosomes in the Heterogeneous Stock Rat Population".
 
@@ -14,7 +16,7 @@ Diego Library Digital Collections. https://doi.org/10.6075/J0VX0GQQ
 
 Software requirements are in `requirements.csv`.
 
-# Reproducing this paper's analysis #
+## Reproducing this paper's analysis
 
 Do not run `genotype_helpers.py`, `io_helpers.py`, `gene_expression_helpers.R`.
 
@@ -61,7 +63,7 @@ Do not run `genotype_helpers.py`, `io_helpers.py`, `gene_expression_helpers.R`.
 
 - Misc. figures and tables: now, all other scripts may be run in any order.
 
-# Directory structure #
+## Directory structure
 
 The code expects this directory structure within your working directory:
 
@@ -117,7 +119,7 @@ Most scripts write to `results/` subdirectories. Exceptions:
 - `dkc1_x_eqtls.R` writes `data/genotypes/X_GWAS_Dkc1_male_top_snp.csv`
 - `gwas_phenotype_association.R` writes to `data/phenotypes/`
 
-# Core output files #
+## Core output files
 
 Many output files are produced in the course of running the analysis scripts.
 Some of them are likely to be of more immediate interest for those wishing to
@@ -136,7 +138,7 @@ The given filenames are within `results/`.
 
 Notably, the latter four files are from "Association test results" in Data.
 
-# Sources of tables/figures #
+## Sources of tables/figures
 
 Locations of output files are relative to/within `results/`. 
 All script names are relative to/within `code/`.
@@ -193,3 +195,21 @@ Some things not mentioned in the table include:
 | File S1 Figure C | `plots/founder_Med14Y_depth.png` | Sequencing depth in founders around *Med14Y* | `med14y_depth.ipynb` |
 | File S1 Figure D | `plots/deep_modern_Med14Y_depth.png` | Sequencing depth in high-coverage modern HS rats around *Med14Y* | `med14y_depth.ipynb` |
 | File S1 Figure E | `plots/modern_Med14Y_avg_depth.png` | Distribution of average read depth within *Med14Y* in low-coverage modern HS rats | `med14y_depth.ipynb` |
+
+## Data file names
+
+The file names in [Data](https://library.ucsd.edu/dc/object/bb6258219k) are,
+unfortunately, terrible. Since they can't be changed, here's a reference table:
+
+| File | Link |
+|-|-|
+| Readme | https://library.ucsd.edu/dc/object/bb6258219k/_1_1.txt/download |
+| Sample metadata | https://library.ucsd.edu/dc/object/bb6258219k/_2_1.csv/download |
+| Raw genotypes | https://library.ucsd.edu/dc/object/bb6258219k/_3_1.zip/download |
+| Genetic relationship matrix | https://library.ucsd.edu/dc/object/bb6258219k/_4_1.zip/download |
+| GWAS phenotypes | https://library.ucsd.edu/dc/object/bb6258219k/_5_1.zip/download |
+| Gene expression | https://library.ucsd.edu/dc/object/bb6258219k/_6_1.zip/download |
+| Sequencing depths | https://library.ucsd.edu/dc/object/bb6258219k/_7_1.zip/download |
+| Association test results | https://library.ucsd.edu/dc/object/bb6258219k/_8_1.zip/download |
+
+This table also appears in the paper as Table S2.
